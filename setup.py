@@ -8,5 +8,6 @@ setup(name='jupyter_c_kernel',
       url='https://github.com/spoorcc/jupyter-gdb-kernel/',
       download_url='https://github.com/spoorcc/jupyter-gdb-kernel/tarball/0.0.1',
       packages=['jupyter_gdb_kernel'],
-      keywords=['jupyter', 'kernel', 'gdb']
+      keywords=['jupyter', 'kernel', 'gdb'],
+      install_requires=['jupyter'],
       )
