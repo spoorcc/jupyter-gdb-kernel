@@ -1,6 +1,6 @@
 from setuptools import setup
 
-setup(name='jupyter_c_kernel',
+setup(name='jupyter_gdb_kernel',
       version='0.0.1',
       description='GDB kernel for Jupyter',
       author='Ben Spoor',
