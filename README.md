@@ -1,6 +1,11 @@
+> __DISCLAIMER__
+>
+> This repo is currently in a very-very alpha stage and only to show the concept
+
 # GDB kernel for Jupyter Notebooks
 
 This kernel can be used to show GDB commands in Jupyter Notebooks
+
 
 ## Installation
 
@@ -14,11 +19,21 @@ jupyter-kernelspec install spec/kernel.json
 
 ## Usage
 
+### Create remote debugging target
 ```shell
 gcc test/dummy.c -g -o dummy
-jupyter notebook --port=8080 --ip=0.0.0.0 --no-browser
 gdbserver 0.0.0.0:1234 dummy
 ```
+### Start notebook server
+```shell
+jupyter notebook --port=8080 --ip=0.0.0.0 --no-browser
+```
+
+### Debug from Jupyter
+
+* Connect to remote target
+* List source code
+![Screenshot](first_demo_screenshot.png)
 
 ## Development
 
