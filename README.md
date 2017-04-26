@@ -4,8 +4,8 @@
 
 # GDB kernel for Jupyter Notebooks
 
-This kernel can be used to show GDB commands in Jupyter Notebooks
-
+This kernel can be used to show GDB commands in Jupyter Notebooks. Currently only single lined commands are supported.
+Also either a `gdbserver` or access to the notebook server is needed to open a target to debug.
 
 ## Installation
 
